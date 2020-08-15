@@ -79,9 +79,7 @@ h1{
 h1, h2, h3, h4, h5, h6{
   font-family: 'Montserrat', sans-serif;
 }
-h4{
-  isolation: isolate;
-}
+
 .current{
   background-color: #555;
   color: white;
@@ -135,7 +133,6 @@ h4{
   background-color: #c72727;
   padding: 1rem;
   color: white;
-  isolation: isolate;
 }
 .box-dark{
   background-color: #333;
@@ -168,7 +165,6 @@ h4{
 }
 #navbar .container .social{
   padding-top: 1.8rem;
-  isolation: isolate;
 }
 #navbar .container .social a{
   padding: 0.5rem;
@@ -192,9 +188,13 @@ h4{
   color: #fff;
 
 }
+/*   background: url('/img/vr-featured-wide.jpg') no-repeat center center/cover; */
 #showcase::before{
   content: '';
-  background: url('/img/vr-featured-wide.jpg') no-repeat center center/cover;
+  background-image: url('/img/vr-featured-wide.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 30%;
   position: absolute;
   top: 0;
   left: 0;
