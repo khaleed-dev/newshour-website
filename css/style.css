@@ -100,10 +100,13 @@ h1, h2, h3, h4, h5, h6{
 }
 .btn-wide{
   display: block;
+  width: 100%;
   padding: 10px 20px;
   background-color: var(--primary-color);
   color: #fff;
   text-align: center;
+  border: none;
+  cursor: pointer;
 } 
 .btn-wide:hover{
   background-color: #1958d4;

@@ -11,6 +11,7 @@
   <title>newshour | Latest News</title>
 </head>
 <body>
+  <!-- nav -->
   <nav id="navbar">
     <div class="container">
       <div class="img-wrapper">
@@ -28,6 +29,7 @@
       </ul>
     </div>
   </nav>
+  <!-- showcase -->
   <section id="showcase">
     <div class="container">
       <div class="showcase-content">
@@ -38,7 +40,7 @@
       </div>
       </div>
   </section>
-
+<!-- articles -->
   <section id="home-article">
     <div class="container">
       <h2>Editor Picks</h2>
@@ -90,8 +92,7 @@
       </div>
     </div>
   </section>
-
-
+<!-- footer -->
   <footer id="main-footer">
     <div class="container">
       <div class="footer-container">
@@ -102,8 +103,10 @@
         <div>
           <h3>EMAIL NEWSLETTER</h3>
           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
-          <input type="email" name="name" id="email" placeholder="Enter email">
-          <a href="#" class="btn-wide">Subscribe</a>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="email" name="email" id="email" placeholder="Enter email...">
+            <input type="submit" value="Subscribe" class="btn-wide">
+          </form>
         </div>
         <div>
           <h3>SITE LINKS</h3>
@@ -122,7 +125,7 @@
         </div>
         <div><p>copyright &copy; 2020. All Rights Reserved</p></div>
       </div>
-      </div>
+    </div>
   </footer>
 </body>
 </html>
